@@ -34,7 +34,7 @@ function Calendar() {
     }
   });
 
-console.log("b :", productBookings);
+
 
   setRent(differenceInDays(calendar[0].endDate, calendar[0].startDate));
 

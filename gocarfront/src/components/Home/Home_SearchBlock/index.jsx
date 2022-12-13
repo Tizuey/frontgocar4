@@ -18,8 +18,8 @@ function HomeSearchBlock({ search, setSearch }) {
     setExpand(!expand);
   }
 
-  let initialDay = calendar.map((initialDay) => { return format(initialDay.startDate, "MM/dd/yyyy") });
-  let finalDay = calendar.map((finalDay) => { return format(finalDay.endDate, "MM/dd/yyyy") });
+  let initialDay = calendar.map((initialDay) => { return format(initialDay.startDate, "dd/MM/yyyy") });
+  let finalDay = calendar.map((finalDay) => { return format(finalDay.endDate, "dd/MM/yyyy") });
 
   initialDay = initialDay[0];
   finalDay = finalDay[0];
@@ -53,17 +53,13 @@ function HomeSearchBlock({ search, setSearch }) {
         </div>
 
 
-{/* ______CHECK-IN______ */}
+
         <div className="input_flex">
-          <div className="selecione"> C H E C K - I N </div>
-          <button className="date" onClick={showCalendar}>  10/01/2023  </button>
+          <div className="selecione"> C H E C K - I N  /  C H E C K - O U T</div>
+          <button className="date" onClick={showCalendar}> {initialDay} - {finalDay} </button>
         </div>
 
-{/* ______CHECK-OUT______ */}
-        <div className="input_flex">
-          <div className="selecione"> C H E C K - O U T </div>
-          <button className="date" onClick={showCalendar}>  18/01/2022 </button>
-        </div>
+
 
         <div className="input_flex">
           <br />

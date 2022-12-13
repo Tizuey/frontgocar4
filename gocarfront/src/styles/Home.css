@@ -81,7 +81,7 @@ h6 {
 }
 
 .btn_header{
-background-color: #D37231 !important;
+background-color: #a9a5a5 !important;
 }
 
 
@@ -104,7 +104,7 @@ background-color: #D37231 !important;
 
 .date {
   color: rgb(80, 78, 80);
-  width: 15vw;
+  width: 25vw;
   padding: 4px;
   border: none;
   border-radius: 6px;
@@ -307,7 +307,7 @@ background-color: #D37231 !important;
 .button_car {
   width: fit-content;
   height: fit-content;
-  background-color: #F49F60;
+  background-color: #8f8d8c;
   color: white;
   padding: 6px;
   border: none;

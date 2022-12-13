@@ -53,7 +53,7 @@ const SignUpForm = () => {
 
       localStorage.setItem("email", values.email);
 
-      fetch(`http://52.91.109.141:8081/api/auth/signup`, {
+      fetch(`https://gocarback.ctdprojetos.com.br/api/auth/signup`, {
         method: "POST",
         headers: {
           Accept: "*/* , application/json, text/plain ",

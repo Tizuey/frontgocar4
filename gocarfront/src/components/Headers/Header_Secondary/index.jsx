@@ -76,13 +76,16 @@ function SecondaryHeader() {
                 <SignOut size={40} color="#F7F6F5" />
               </a>{" "}
             </button>
-            <button className="circle1"> 
+
+            <Link to="/reservas">
+            <button className="circle1" href> 
                 <div className="circle2">
                     <div className="perfil" >
                       <div className="letters"><h5>{name[0]}&nbsp;{lastname[0]}</h5></div>
                     </div>
                 </div> 
             </button>
+            </Link>
           </div>
         </div>
       </Navbar>

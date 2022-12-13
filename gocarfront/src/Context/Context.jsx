@@ -21,7 +21,7 @@ const ContextProvider = ({ children }) => {
   const [rent, setRent] = useState();
 
   // Categories
-  const urlCategories = "http://52.91.109.141:8081/categories";
+  const urlCategories = "https://gocarback.ctdprojetos.com.br/categories";
   useEffect(() => {
     fetch(urlCategories)
       .then((responseCategories) => responseCategories.json())
@@ -29,7 +29,7 @@ const ContextProvider = ({ children }) => {
   }, []);
 
   // Cities
-  const urlCities = "http://52.91.109.141:8081/cities";
+  const urlCities = "https://gocarback.ctdprojetos.com.br/cities";
   useEffect(() => {
     fetch(urlCities)
       .then((responseCities) => responseCities.json())
@@ -37,7 +37,7 @@ const ContextProvider = ({ children }) => {
   }, []);
 
   // Products
-  const urlProducts = "http://52.91.109.141:8081/products";
+  const urlProducts = "https://gocarback.ctdprojetos.com.br/products";
   useEffect(() => {
     fetch(urlProducts)
       .then((responseProducts) => responseProducts.json())
@@ -45,7 +45,7 @@ const ContextProvider = ({ children }) => {
   }, []);
 
   // Images
-  const urlImages = "http://52.91.109.141:8081/images";
+  const urlImages = "https://gocarback.ctdprojetos.com.br/images";
   useEffect(() => {
     fetch(urlImages)
       .then((responseImages) => responseImages.json())
@@ -53,7 +53,7 @@ const ContextProvider = ({ children }) => {
   }, []);
 
   // Bookings
-  const urlBookings = "http://52.91.109.141:8081/bookings";
+  const urlBookings = "https://gocarback.ctdprojetos.com.br/bookings";
   useEffect(() => {
       fetch(urlBookings)
         .then((responseCars) => responseCars.json())
@@ -62,6 +62,8 @@ const ContextProvider = ({ children }) => {
             return setProductBookings(a);
         } );      
   }, []);
+
+
 
   return (
     <Context.Provider

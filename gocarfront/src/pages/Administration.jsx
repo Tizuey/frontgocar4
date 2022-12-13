@@ -1,6 +1,5 @@
 import { useFormik } from 'formik';
 
-
 import "../styles/Administration.css"
 
 function Administration() {
@@ -48,8 +47,38 @@ function Administration() {
         },
         validate,
         onSubmit: values => {
-            console.log(values)
-            console.log(features)
+
+    fetch(`https://gocarback.ctdprojetos.com.br/products`, {
+        method: "POST",
+        headers: {
+          Accept: "*/* , application/json, text/plain ",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          nome: `${values.nome}`,
+          description: `${values.description}`,
+          features: `${values.features}`,
+          images: `${values.images}`,
+          category: `${values.category}`,
+          city: `${values.city}`,
+          booking: [],
+        }),
+      }).then((res) => {
+        if (!res.ok) {
+          throw Error(res.statusText);
+        } else {
+          setTimeout(() => {
+            (window.location.href = "/cadastro");
+          }, 0);
+        }
+      });
+
+
+
+
+
+
+
         }
     })
 
@@ -308,12 +337,6 @@ function Administration() {
                     </div>
 
 
-
-
-
-
-
-
                     <div className="images">
                         <h3>Carregar Imagens</h3>
                         <h9>COLOQUE AS URLS DAS IMAGENS</h9>
@@ -324,16 +347,8 @@ function Administration() {
                             <input type="text" name="imagem" id="4"/>
                             <input type="text" name="imagem" id="5"/>
                             <input type="text" name="imagem" id="6"/>
-                            <button className="newImage">+</button>
                         </div>
                     </div>
-
-
-
-
-
-
-
 
 
                     <datalist id="cities">
@@ -352,7 +367,7 @@ function Administration() {
                     </datalist>
 
 
-                    <button className="btn_send">Criar</button>
+                    <button className="btn_send" type="submit">Criar</button>
 
                 </form> 
 

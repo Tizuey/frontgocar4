@@ -12,6 +12,8 @@ import SignIn from "../pages/SignIn";
 import SignUp from "../pages/SignUp";
 import Footer from "../components/Footer";
 import PginaAdm from "../pages/Administration";
+import BookingUser from "../pages/BookingUser";
+import CarPost from "../pages/carPost";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -38,6 +40,8 @@ const RouteList = () => {
             <Route path="/signin" element={<SignIn />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/admin" element={<PginaAdm />} />
+            <Route path="/reservas" element={<BookingUser />} />
+            <Route path="/cadastro" element={<CarPost />} />
           </Routes>
 
           <footer>
