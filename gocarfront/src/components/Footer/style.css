@@ -1,0 +1,36 @@
+.footer{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    background-color: #01010A;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* ___________________________ R E S P O N S I V I D A D E___________________________*/
+
+@media  (max-width:767px){
+    .footer_social_media{
+        width: 32vw;
+    }
+
+}
+
+@media  (min-width:768px) and (max-width:1024px){
+    
+    footer{
+        margin-top: 2%;
+    }
+ 
+    .footer_social_media{
+        width: 20vw;
+    }
+
+}
