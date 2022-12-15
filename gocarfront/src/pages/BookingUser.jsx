@@ -39,6 +39,7 @@ import { Context } from "../Context/Context";
     return(
         <>
         <div className="bookings_cards" >
+            <h1>Suas Reservas</h1>
             <div id="galeria_carro" className="galeria_carro bookingGaleria">
                 {selectedBookings?.map((userBooking) => (
                     <div key={userBooking.id} className="card_main">

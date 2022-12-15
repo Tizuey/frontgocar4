@@ -60,7 +60,7 @@ function HomeClients() {
             <div className="alinhartext">
                 <h3>Shabazz Aladeen</h3>
                 <p>
-                O General-Almirante Shabazz Aladeen é um dos nossos mais fieis clientes, pois sempre que vem ao Brasil é em nossa empresa em que ele compra.
+                O General-Almirante Shabazz Aladeen é um dos nossos mais fieis clientes.
                 </p>
             </div>
 

@@ -65,15 +65,23 @@ color: rgb(232, 102, 22);
     }
 
     .card_category img{
-        width: 65vw;
-        height: 0vh;
+        width: 85vw;
+        height: 120vh;
         overflow-y: hidden;
     } 
 
-
+    .category_img .imgh{
+        width:300px ;
+         /* display: none; */
+    }
 }
 
 @media  (max-width:767px){
 
 
+
+        .category_img .imgh{
+            width:200px ;
+             /* display: none; */
+        }
 }

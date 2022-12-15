@@ -421,6 +421,10 @@ background-color: #a9a5a5 !important;
     width: 30vw;
   }
 
+ 
+
+
+
   /* Bloco de pesquisa */
   .second_header {
     height: fit-content;
@@ -531,6 +535,34 @@ background-color: #a9a5a5 !important;
     padding: 16px;
     overflow-x: hidden;
   }
+
+
+  .recomendations_title{
+    margin-top: 2%;
+    font-size: 160%;
+  }
+
+  .clientetitulo{
+    font-size: 25px;
+}
+ .alinhartext h3{
+
+  font-size: 18px;
+ }
+
+ .alinhartext p{
+
+  font-size: 13px;
+ }
+  .clientImg{
+    width: 100px;
+    height: 100px;
+    
+  }
+
+  .carousel-indicators [data-bs-target]{
+  display: none;
+ }
 
   .titulofilter{
     text-align: center;

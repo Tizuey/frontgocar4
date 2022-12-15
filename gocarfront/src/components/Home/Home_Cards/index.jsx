@@ -19,7 +19,7 @@ function HomeCards({ search }) {
     return { ...cars, urlImage: fotos?.urlImage };
   });
 
-  let recomended = product.slice(6,8)
+  let recomended = product.slice(4,6)
 
   let dataescolhida = [];
   let produtoreservado = [];

@@ -15,7 +15,7 @@ function HomeCategories() {
           <div key={categories.id} className="card_category">
             <div className="category_img">
               {" "}
-              <img src={categories.urlImage} alt="" />
+              <img className="imgh" src={categories.urlImage} alt="" />
             </div>
             <div className="category_info">
               <h2>{categories.qualification}</h2>

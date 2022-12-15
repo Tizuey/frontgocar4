@@ -33,3 +33,18 @@ span.carousel-control-next-icon {
 span.carousel-control-prev-icon {
     background-color: #D37231
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+ 
+
+
+
+}
+
+@media  (max-width:767px){
+
+    .clientetitulo{
+        font-size: 10%;
+    }
+
+}
