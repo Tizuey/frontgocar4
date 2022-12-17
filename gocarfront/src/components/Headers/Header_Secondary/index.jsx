@@ -1,7 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 
-import Logo from "../../../assets/gocar_log.png";
-
 import "./style.css";
 
 import { Navbar } from "react-bootstrap";
@@ -36,7 +34,7 @@ function SecondaryHeader() {
         <Navbar.Brand>
           <Link to="/">
             <img
-              src={Logo}
+              src="https://pi-group01-gocar-bucket.s3.amazonaws.com/assets/gocar_log.png"
               width="160"
               height="48"
               className="align-top ml-4"

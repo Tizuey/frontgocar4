@@ -2,6 +2,8 @@ import { useFormik } from 'formik';
 
 import "../styles/Administration.css"
 
+// import Imagecar from "../components/ImageS3/UploadImageToS3WithReactS3";
+
 function Administration() {
 
     const validate = values => {
@@ -240,15 +242,6 @@ function Administration() {
                     </div>
 
 
-
-
-
-
-
-
-
-                    
-
                     <div className="product_atributes_container">
                         <h3>Adicionar Atributos</h3>
                         <div className="atributes_container">
@@ -298,14 +291,6 @@ function Administration() {
                     </div>
 
 
-
-
-
-
-
-
-
-
                     <div className="polices_input">
                         <h3>Politicas de locação padrão</h3>
                         <div className="container">
@@ -349,6 +334,8 @@ function Administration() {
                             <input type="text" name="imagem" id="6"/>
                         </div>
                     </div>
+
+                    
 
 
                     <datalist id="cities">

@@ -1,6 +1,5 @@
 import React from "react";
 
-import Logo from "../../assets/gocar_log.png";
 
 import "./style.css";
 
@@ -9,7 +8,7 @@ function Footer() {
     <>
       <div className="footer">
                 <img
-                  src={Logo}
+                  src="https://pi-group01-gocar-bucket.s3.amazonaws.com/assets/gocar_log.png"
                   width="170"
                   height="51"
                   className="align-top ml-4"
